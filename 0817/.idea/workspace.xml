@@ -26,8 +26,8 @@
       <file leaf-file-name="ES5.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ES5.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="237">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -175,12 +175,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1502971146804</updated>
-      <workItem from="1502971150658" duration="2581000" />
+      <workItem from="1502971150658" duration="3048000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2581000" />
+    <option name="totallyTimeSpent" value="3048000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="177" y="23" width="1635" height="871" extended-state="0" />
@@ -231,8 +231,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ES5.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="237">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding />
         </state>
       </provider>
