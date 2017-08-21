@@ -160,6 +160,8 @@ console.log(result);
 1.for...of循环语句
 ```
 
+***
+
 
 
 #### 数组内置方法Array.prototype.reduce
@@ -195,4 +197,34 @@ var b = a.reduceCopy(function (count, value,key,arry) {
 console.log(a);         // 结果为[ 1, 2, 3 ]
 console.log(b)          // 结果为6
 ```
+
+***
+
+### 循环语句for...in
+
+```
+var a = [1,2,3];
+for(var key in a){
+  console.log(key); //结果为依次为0，1，2
+}
+var b = {0:1,1:2,2:3};
+for(var key in b){
+  console.log(key); //结果为依次为0，1，2
+}
+代码解读：从结果得知,for...in遍历数组的时候是遍历数组的下标值，而在遍历对象的时候遍历的是key值，所以猜想，数组在JS中，本质上也是一个以键值对形式存在的对象
+```
+
+***
+
+### ES6循环for...of语句
+
+```
+var a = [1,2,3];
+for(var value of a){
+  console.log(value)  // 结果依次为1，2，3
+}
+for...of语句看着有点像for...in语句，但是和for...in语句不同的是它不可以循环对象，只能循环数组
+```
+
+***
 
