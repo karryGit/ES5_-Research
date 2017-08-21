@@ -176,5 +176,23 @@ var b = a.reduce(function (count, value,key,arry) {
 console.log(a);         // 结果为[ 1, 2, 3 ]
 console.log(b)          // 结果为6
 代码解读：reduce的不同之处在于累加，和其他几个内置方法不同的地方，它的第二个参数不是this对象，而是初始累加值（如果不设置的话数组会乱掉），而且回调函数的的个数也不同，比其他的多了一个，而且还在在开始的多加了一个参数，第一个参数记录的是上一次循环的累加值，下面写一个reduce循环实现例子供大家参考：
+Array.prototype.reduceCopy = function(callback,countInit){
+    var arr =  this;
+    for(var i=0;i<arr.length;i++){
+        var cbValue = callback(countInit,arr[i],i,this);
+        countInit = cbValue;
+    }
+    return countInit;
+}
+var a = [1,2,3];
+var b = a.reduceCopy(function (count, value,key,arry) {
+  console.log(count);   // 结果依次为0，1，3
+  console.log(value);   // 结果依次为1，2，3
+  console.log(key);     // 结果依次为0，1，2
+  console.log(arry)     // 三次结果都为[1,2,3]
+  return count + value;
+},0);
+console.log(a);         // 结果为[ 1, 2, 3 ]
+console.log(b)          // 结果为6
 ```
 
